@@ -1,0 +1,190 @@
+.timeline {
+  position: relative;
+  transform: translateZ(0);
+
+  > * {
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.dateTimeLine {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+
+  .dateContainer {
+    position: relative;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: Center;
+    font-size: 13px;
+
+    .dateDiv {
+      width: 60px;
+      height: 25px;
+      color: rgba(191, 191, 191, 1);
+      background-color: rgba(85, 85, 85, 1);
+      border: solid 1px rgba(85, 85, 85, 1);
+      border-radius: 13px;
+      margin: auto 10px;;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        color: #EAEAEA;
+        background-color: #848484;
+        border: solid 1px #848484;
+      }
+
+      &:active {
+        color: rgba(191, 191, 191, 1);
+        background-color: rgba(85, 85, 85, 1);
+        border: solid 1px rgba(85, 85, 85, 1);
+      }
+
+      &.selected{
+        color: rgba(255, 247, 236, 1);
+        background-color: rgba(250, 86, 33, 1);
+        border: solid 1px rgba(250, 86, 33, 1);
+
+        &:hover {
+          color: #FFFFFF;
+          background-color: #F97B52;
+          border: solid 1px #F97B52;
+        }
+
+        &:active {
+          color: rgba(255, 247, 236, 1);
+          background-color: rgba(250, 86, 33, 1);
+          border: solid 1px rgba(250, 86, 33, 1);
+        }
+      }
+    }
+
+    .HLine {
+      width: 100%;
+      height: 2px;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(85, 85, 85, 1);
+    }
+  }
+
+  .HLine {
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(85, 85, 85, 1);
+  }
+
+  .canvasContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    flex-grow: 1;
+    transform: translateZ(0);
+    > * {
+      position: absolute;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.multipleTimeline {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(17, 19, 20);
+
+  .dateContainer {
+    position: relative;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: Center;
+    font-size: 13px;
+
+    .dateDiv {
+      width: 60px;
+      height: 25px;
+      color: rgba(191, 191, 191, 1);
+      background-color: rgba(85, 85, 85, 1);
+      border: solid 1px rgba(85, 85, 85, 1);
+      border-radius: 13px;
+      margin: auto 10px;;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        color: #EAEAEA;
+        background-color: #848484;
+        border: solid 1px #848484;
+      }
+
+      &:active {
+        color: rgba(191, 191, 191, 1);
+        background-color: rgba(85, 85, 85, 1);
+        border: solid 1px rgba(85, 85, 85, 1);
+      }
+
+      &.selected{
+        color: rgba(255, 247, 236, 1);
+        background-color: rgba(250, 86, 33, 1);
+        border: solid 1px rgba(250, 86, 33, 1);
+
+        &:hover {
+          color: #FFFFFF;
+          background-color: #F97B52;
+          border: solid 1px #F97B52;
+        }
+
+        &:active {
+          color: rgba(255, 247, 236, 1);
+          background-color: rgba(250, 86, 33, 1);
+          border: solid 1px rgba(250, 86, 33, 1);
+        }
+      }
+    }
+  }
+
+  .HLine {
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(85, 85, 85, 1);
+  }
+
+  .canvasContainer {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    transform: translateZ(0);
+    > * {
+      position: absolute;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.nine {
+      height: 210px;
+    }
+  }
+}
